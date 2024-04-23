@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <nav class="flexible">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+          </svg>          
+        <div class="flexible">
+            <select>
+                <option> serif</option>
+                <option>sans-serif</option>
+                <option>monospace</option>
+            </select>             
+        </div>
+    </nav>
+    <main>
+       <div class="find flexible relative">
+        <input type="text" placeholder="Enter Your Word"  id="search">
+       <button id="searchBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg> 
+       </button>
+       </div>  
+       <div class="results">
+        <div class="word flexible">
+           <div>
+            <h1 class="result">word</h1>
+            <span class="small">/'wo:ar:d/</span>
+           </div>
+           <audio controls class="audio" src=""></audio>
+        </div>
+        <div class="noun">
+            <h2>noun</h2>
+            <div class="noneContainer">
+                <p class="text-gray-600">meaning</p>
+                <ul class="nounResult"></ul>
+            </div>
+            <div class="flex items-center">
+                <span>synoyms</span>
+                <p class="small info">electronic keyboard</p>
+            </div>
+                </div>
+        <div class="verb">
+            <h2>verb</h2>
+            <div>
+                <p class="text-gray-600">meaning</p>
+                <ul class="verb"></ul>
+            </div>
+                </div>
+        <p><span class="text-gray-600">source</span></p>
+        <a class="link text-blue-700" href=""></a>
+       </div>      
+    </main>
+
+
+    <script src="file.js"></script>
+</body>
+</html>

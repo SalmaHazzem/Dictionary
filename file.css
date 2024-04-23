@@ -1,0 +1,125 @@
+:root {
+    --mainColor:darkviolet;
+}
+
+
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+}
+
+html {
+    font-size: 20px;
+    font-family: serif, sans-serif, monospace;
+    text-transform: capitalize;
+}
+
+svg {
+    width: 20px !important;
+    color: gainsboro;
+}
+
+
+select {
+    border: none;
+    text-transform: capitalize;
+    border-right: 1px solid var(--mainColor);
+    margin-right: 5px;
+}
+
+nav {
+    margin: 20px 0 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 0.9rem;
+    font-family:fantasy ;
+    margin-bottom: 20px;
+}
+
+ul {
+    font-size: 0.9rem;
+    list-style: disc;
+    margin: 30px 0px 20px 85px;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.find svg {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 50;
+    color: var(--mainColor);
+}
+
+
+.find input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(236, 234, 234);
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  
+  border-left: 10px solid var(--mainColor);
+}
+
+.small {
+    color: var(--mainColor);
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: white;
+  }
+
+  audio::-webkit-media-controls-mute-button {
+    display: none;
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-current-time-display {
+    color:transparent;
+  }
+
+
+  audio::-webkit-media-controls-time-remaining-display {
+    color: transparent;
+  }
+  
+  audio::-webkit-media-controls-timeline {
+    display: none;
+   
+  }
+  audio::-webkit-media-controls-volume-slider {
+display: none;
+  }
+
+  
